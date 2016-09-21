@@ -102,9 +102,9 @@
 
     properties id: false, do
       name: "Foo", # Defaults to last term of module, FooVertex
-      field: :bar, :integer, default: 42
-      field: :biff, :string, required: true
-      field: :search_key, :string, default: &gen_search_key/1
+      field :bar, :integer, default: 42
+      field :biff, :string, required: true
+      field :search_key, :string, default: &gen_search_key/1
     end
   end
 

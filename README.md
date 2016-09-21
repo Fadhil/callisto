@@ -78,7 +78,7 @@
   But that's where Callisto.Query comes in -- it's intended to represent a query as component parts, which can be reworked over time.  It's also ready to automagically convert Vertex and Edge records into match constructs:
 
   ```elixir
-  alias Callisto{Query, Vertex}
+  alias Callisto.{Query, Vertex}
   matcher = Vertex.cast("Foo", id: 42)
   query = %Query{}
           |> Query.match(vert: matcher)
